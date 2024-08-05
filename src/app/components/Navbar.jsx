@@ -23,7 +23,7 @@ const navLinks = [
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false)
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#201E43] bg-opacity-100'>
+    <nav className='fixed top-0 left-0 right-0 z-10 bg-[#1E5128] bg-opacity-100'>
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href={"/"} className='text-2xl md:text-5xl text-white font-semibold'>
           LOGO

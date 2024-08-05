@@ -29,8 +29,8 @@ const HeroSection = () => {
         Aliquid eius totam, eum velit a suscipit laborum minus assumenda.
         </p>
         <div>
-          <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#EEEEEE] hover:bg-slate-500 text-black">Hire Me</button>
-          <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-slate-400 text-white border border-white mt-3">Download CV</button>
+          <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#EEEEEE] hover:bg-[#4E9F3D] text-black">Hire Me</button>
+          <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-[#1E5128] text-white border border-white mt-3">Download CV</button>
         </div>
       </div>
       <div className="col-span-5 place-self-center mt-4 lg:text-xl">
