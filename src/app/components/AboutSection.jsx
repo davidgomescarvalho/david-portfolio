@@ -4,6 +4,44 @@ import React, { useTransition, useState } from 'react'
 import Image from "next/image";
 import TabButton from "./TabButton";
 
+const TAB_DATA = [
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul className='list-disc pl-2'>
+        <li>Ruby on Rails</li>
+        <li>React</li>
+        <li>JavaScript</li>
+        <li>MongoDB</li>
+        <li>SQlite</li>
+        <li>Bootstrap</li>
+        <li>Tailwind</li>
+        <li>Figma</li>
+      </ul>
+    )
+  },
+  {
+    title: "Eeducation",
+    id: "education",
+    content: (
+      <ul className='list-disc pl-2'>
+        <li>Le Wagon - Paris</li>
+        <li>Le Reacteur - Paris</li>
+      </ul>
+    )
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <ul className='list-disc pl-2'>
+        <li> Titre RNCP35653 Concepteur développeur d’applications web</li>
+      </ul>
+    )
+  }
+]
+
 const AboutSection = () => {
   const [tab, setTab] = useState('skills');
   const [isPending, startTransition] = useTransition();
@@ -17,19 +55,21 @@ const AboutSection = () => {
     <section className='text-white'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
         <Image src="/images/about-me.png" alt="About me" width={500} height={500} />
-        <div>
+        <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
           <p className='text-base lg:text-lg'>
-          Je suis un développeur web engagé avec de bases solides en technologies front-end et back-end,
-          acquises grâce à des expériences intensives de bootcamp au "Le Wagon" et au "Le Reacteur".
-          Ayant désormais envie de valoriser mes compétences et de rejoindre une équipe professionnelle,
-          je travaille actuellement sur des projets personnels pour mettre en pratique mes connaissances.
-          Mon ambition est maintenant de faire partie d'une entreprise à laquelle je peux apporter des idées
-          innovantes et fraîches et également acquérir une compréhension plus profonde pour naviguer dans ce
-          domaine dynamique en évolution rapide.
+          I was a chef for over 10 years. From now on I made a
+          professional change to become a web developer.
+          I'm keen to promote my skills and
+          join a professional team, I am currently working on
+          personal projects to put my knowledge into practice.
+          My ambition now is to be part of a company
+          which I can bring innovative and fresh ideas and
+          also gain a deeper understanding to navigate
+          in this dynamic and rapidly evolving field.
           </p>
           <div className="flex flex-row mt-8">
-            <TabButton
+          <TabButton
              selectTab={() => handleTabChange("skills")}
               active={tab === 'skills'}
             >
@@ -37,9 +77,25 @@ const AboutSection = () => {
               Skills
               {" "}
             </TabButton>
-            <span className='mr-3 font-semibold hover:text-white text-[#D8E9A8] border-b border-green-500'>Skills</span>
-            <span>Education</span>
-            <span>Experience</span>
+            <TabButton
+             selectTab={() => handleTabChange("education")}
+              active={tab === 'education'}
+            >
+              {" "}
+              Education
+              {" "}
+            </TabButton>
+            <TabButton
+             selectTab={() => handleTabChange("certifications")}
+              active={tab === 'certifications'}
+            >
+              {" "}
+              Certifications
+              {" "}
+            </TabButton>
+          </div>
+          <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}
+
           </div>
         </div>
       </div>

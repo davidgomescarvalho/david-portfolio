@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React from 'react';
 import Image from 'next/image';
@@ -25,8 +26,12 @@ const HeroSection = () => {
             repeat={Infinity}
           />
         </h1>
-        <p className='text-[#EEEEEE] text-base sm:text-lg mb-6 lg:text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Aliquid eius totam, eum velit a suscipit laborum minus assumenda.
+        <p className='text-[#EEEEEE] text-base sm:text-lg mb-6 lg:text-xl'>
+        I am a commited web developer with a robust foundation in both
+          front-end and back-end technologies, acquired through intensive
+          bootcamp experiences at "Le Wagon" and "Le Reacteur".
+          This past year, I have acquired a strong command over modern
+          web development languages and frameworks.
         </p>
         <div>
           <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#EEEEEE] hover:bg-[#4E9F3D] text-black">Hire Me</button>
@@ -34,7 +39,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="col-span-5 place-self-center mt-4 lg:text-xl">
-        <div className="rounded-full bg-[white] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+        <div className="rounded-full bg-[white] w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] relative">
           <Image
             src="/images/david-profile.png"
             alt="Profile picture"
