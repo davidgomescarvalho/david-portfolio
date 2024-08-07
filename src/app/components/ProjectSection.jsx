@@ -34,13 +34,14 @@ const projectsData = [
 ]
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
+
   const handleTagChange = (newTag) => {
     setTag(newTag);
   };
 
-  const filteredprojects = projectsData.filter((project) => {
-    project.tag.includes(tag);
-  });
+  const filteredProjects = projectsData.filter((project) =>
+    project.tag.includes(tag)
+  );
 
   return (
     <>
@@ -65,7 +66,7 @@ const ProjectSection = () => {
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {projectsData.map((project) => (
+        {filteredProjects.map((project) => (
           <ProjectCard
             key={project.id}
             title={project.title}
