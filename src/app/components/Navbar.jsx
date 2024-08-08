@@ -1,6 +1,6 @@
 "use client";
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import NavLink from './NavLink'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from './MenuOverlay'
@@ -21,7 +21,7 @@ const navLinks = [
 ]
 
 const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = React.useState(false)
+  const [navbarOpen, setNavbarOpen] = useState(false)
   return (
     <nav className='fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#1E5128] bg-opacity-100'>
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
@@ -29,16 +29,18 @@ const Navbar = () => {
           LOGO
         </Link>
         <div className='mobile-menu block md:hidden'>
-          {
-            !navbarOpen ? (
-              <button onClick={() => setNavbarOpen(true)} className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border'>
-                <Bars3Icon className='h-5 w-5' />
-              </button>
-            ) : (
-              <button onClick={() => setNavbarOpen(false)} className=' flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border'>
-                <XMarkIcon className='h-5 w-5' />
-              </button>
-            )
+          {!navbarOpen ? (
+            <button
+              onClick={() => setNavbarOpen(true)}
+              className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border'
+            >
+              <Bars3Icon className='h-5 w-5' />
+            </button>
+          ) : (
+            <button onClick={() => setNavbarOpen(false)} className=' flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border'>
+              <XMarkIcon className='h-5 w-5' />
+            </button>
+          )
           }
         </div>
         <div className="menu hidden md:block md:w-auto" id='navbar'>

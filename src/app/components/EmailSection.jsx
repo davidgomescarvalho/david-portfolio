@@ -1,10 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useState } from 'react'
+
 import GithubIcon from '../../../public/github-logo.svg';
 import LinkedInIcon from '../../../public/linkedin-logo.svg';
+import Ruby from '../../../public/images/logos/ruby.png';
+import Rails from '../../../public/images/logos/rails.png';
+import JavaScript from '../../../public/images/logos/js.png';
+import ReactLogo from '../../../public/images/logos/react.png';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { px } from 'framer-motion';
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -34,7 +41,7 @@ const EmailSection = () => {
     }
   }
   return (
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
+    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative' id="contact">
       <div
         className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-12 -translate-y-12'></div>
       <div className='z-10'>
@@ -57,7 +64,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        <form className='dlex flex-col' onSubmit={handleSubmit}>
+        {/* <form className='flex flex-col' onSubmit={handleSubmit}>
           <div className='mb-6'>
             <label htmlFor="email"
               type="email"
@@ -113,7 +120,22 @@ const EmailSection = () => {
               </p>
             )
           }
-        </form>
+        </form> */}
+
+        <div className="grid grid-cols-4 gap-4">
+          <div className="flex items-center justify-center">
+            <Image src={Ruby} alt="ruby" width={80} />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image src={Rails} alt="rails" width={200} />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image src={JavaScript} alt="JavaScript" width={80} />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image src={ReactLogo} alt="react" width={100} />
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -20,11 +20,7 @@ const achievementsList = [
     value: "0"
   },
   {
-    metric: "Awards",
-    value: "0",
-  },
-  {
-    metric: "Xp Years",
+    metric: "Years",
     value: "1",
   }
 ];
