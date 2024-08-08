@@ -69,7 +69,7 @@ const EmailSection = () => {
               type="email"
               id="email"
               required
-              className='bg-white border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
+              className='bg-white border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5'
               placeholder='jondoe@email.com'
             />
           </div>
@@ -84,7 +84,7 @@ const EmailSection = () => {
               type="text"
               id="subject"
               required
-              className='bg-white border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
+              className='bg-white border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5'
               placeholder='Type your subject here'
             />
           </div>
@@ -97,7 +97,7 @@ const EmailSection = () => {
             <textarea
               name="message"
               id="message"
-              className='bg-white border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
+              className='bg-white border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5'
               placeholder='Leave me a message here.'
             />
           </div>
@@ -106,6 +106,13 @@ const EmailSection = () => {
             className='bg-green-500 hover:bg-green-600 text-white font-meium py-2.5 px-5 rounded-lg w-full'>
             Send a Message
           </button>
+          {
+            emailSubmitted && (
+              <p className='text-green-400 text-sm mt-2'>
+                Your message has been sent successfully!
+              </p>
+            )
+          }
         </form>
       </div>
     </section>
