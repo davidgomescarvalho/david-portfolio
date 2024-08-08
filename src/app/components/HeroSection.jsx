@@ -3,12 +3,17 @@
 import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
     <section className='lg:py-16'>
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
+          className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-[#EEEEEE] mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span>Hello, I&apos;m {" "}</span>
             <br />
@@ -38,8 +43,12 @@ const HeroSection = () => {
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#EEEEEE] hover:bg-[#4E9F3D] text-black">Hire Me</button>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-[#1E5128] text-white border border-white mt-3">Download CV</button>
           </div>
-        </div>
-        <div className="col-span-5 place-self-center mt-4 lg:text-xl">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }} div
+          className="col-span-5 place-self-center mt-4 lg:text-xl">
           <div className="rounded-full bg-[white] w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] relative">
             <Image
               src="/images/david-profile.png"
@@ -49,8 +58,7 @@ const HeroSection = () => {
               height={300}
             />
           </div>
-
-        </div>
+        </motion.div>
       </div>
 
     </section>
