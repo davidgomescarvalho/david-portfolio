@@ -8,6 +8,11 @@ import Ruby from '../../../public/images/logos/ruby.png';
 import Rails from '../../../public/images/logos/rails.png';
 import JavaScript from '../../../public/images/logos/js.png';
 import ReactLogo from '../../../public/images/logos/react.png';
+import Mongo from '../../../public/images/logos/mongo.png';
+import Bootstrap from '../../../public/images/logos/bootstrap.png';
+import Figma from '../../../public/images/logos/figma.png';
+import Tailwind from '../../../public/images/logos/tailwind.png';
+
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -52,6 +57,12 @@ const EmailSection = () => {
           Hello!
           I'm currently looking for new opportunities, my inbox is always open.
           Whether you have a question or contact me, I'll quickly get back to you!
+        </p>
+        <p className='text-[#ADB7BE] mb-4 max-w-md'>
+          Email: davidgomescarvalho.dev@gmail.com
+        </p>
+        <p className='text-[#ADB7BE] mb-4 max-w-md'>
+          Phone: +33 6 98 51 44 11
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/davidgomescarvalho">
@@ -134,6 +145,18 @@ const EmailSection = () => {
           </div>
           <div className="flex items-center justify-center">
             <Image src={ReactLogo} alt="react" width={100} />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image src={Mongo} alt="react" width={100} />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image src={Bootstrap} alt="react" width={100} />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image src={Tailwind} alt="react" width={100} />
+          </div>
+          <div className="flex items-center justify-center">
+            <Image src={Figma} alt="react" width={100} />
           </div>
         </div>
       </div>
