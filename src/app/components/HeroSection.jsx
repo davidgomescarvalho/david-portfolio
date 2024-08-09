@@ -40,7 +40,9 @@ const HeroSection = () => {
             web development languages and frameworks.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#EEEEEE] hover:bg-[#4E9F3D] text-black">Hire Me</button>
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#EEEEEE] hover:bg-[#4E9F3D] text-black">
+              Hire Me
+            </button>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-[#1E5128] text-white border border-white mt-3">Download CV</button>
           </div>
         </motion.div>
