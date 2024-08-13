@@ -10,8 +10,8 @@ const projectsData = [
     description: "A portfolio website built with React and Tailwind CSS.",
     image: "/images/projects/procrast-iphone.jpeg",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/davidgomescarvalho/david-portfolio",
+    previewUrl: "https://david-portfolio-sooty.vercel.app/"
   },
   {
     id: 2,
@@ -19,8 +19,8 @@ const projectsData = [
     description: "A clone of the Netflix front page built with React.",
     image: "/images/projects/netflix.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/davidgomescarvalho/netflix-david",
+    previewUrl: "https://netflix-david.vercel.app/"
   },
   {
     id: 3,
@@ -28,8 +28,8 @@ const projectsData = [
     description: "A simple tic-tac-toe game built with React.",
     image: "/images/projects/tic-tac-toe.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/davidgomescarvalho/tic-tact-toe-react",
+    previewUrl: "https://tic-tact-toe-react.vercel.app/"
   }
 ]
 const ProjectSection = () => {
