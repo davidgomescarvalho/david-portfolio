@@ -24,9 +24,9 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "React Portfolio Website",
-    description: "A portfolio website built with React and Tailwind CSS.",
-    image: "/images/projects/procrast-iphone.jpeg",
+    title: "Tic-Tac-Toe Game",
+    description: "A simple tic-tac-toe game built with React.",
+    image: "/images/projects/tic-tac-toe.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/"
