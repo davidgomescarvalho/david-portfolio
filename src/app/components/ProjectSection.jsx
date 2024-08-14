@@ -39,7 +39,26 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/davidgomescarvalho/david-portfolio",
     previewUrl: "https://david-portfolio-sooty.vercel.app/"
+  },
+  {
+    id: 5,
+    title: "Pokédex in Rails",
+    description: "A Podédex index built with Ruby on Rails.",
+    image: "/images/projects/pokedex.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/davidgomescarvalho/pokedex",
+    previewUrl: "/"
+  },
+  {
+    id: 6,
+    title: "Garden App in Rails",
+    description: "Create your own garden and add pictures of your plants.",
+    image: "/images/projects/garden.png",
+    tag: ["All", "Web"],
+    gitUrl: "",
+    previewUrl: "https://my-garden-app-749281f9658b.herokuapp.com/"
   }
+
 ]
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
