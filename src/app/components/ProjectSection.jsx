@@ -6,12 +6,12 @@ import ProjectTag from './ProjectTag'
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "A portfolio website built with React and Tailwind CSS.",
+    title: "Procrast",
+    description: "A Ruby on rails app that helps you to manage your tasks.",
     image: "/images/projects/procrast-iphone.jpeg",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/davidgomescarvalho/david-portfolio",
-    previewUrl: "https://david-portfolio-sooty.vercel.app/"
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/davidgomescarvalho/procrast",
+    previewUrl: "https://www.procrast.fr/"
   },
   {
     id: 2,
@@ -26,10 +26,19 @@ const projectsData = [
     id: 3,
     title: "Tic-Tac-Toe Game",
     description: "A simple tic-tac-toe game built with React.",
-    image: "/images/projects/tic-tac-toe.png",
+    image: "/images/projects/tic-game.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/davidgomescarvalho/tic-tact-toe-react",
     previewUrl: "https://tic-tact-toe-react.vercel.app/"
+  },
+  {
+    id: 4,
+    title: "React Portfolio Website",
+    description: "A portfolio website built with React and Tailwind CSS.",
+    image: "/images/projects/procrast-iphone.jpeg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/davidgomescarvalho/david-portfolio",
+    previewUrl: "https://david-portfolio-sooty.vercel.app/"
   }
 ]
 const ProjectSection = () => {
