@@ -58,8 +58,7 @@ const AboutSection = () => {
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4 mt-6'>About Me</h2>
           <p className='text-base lg:text-lg'>
-            I was a chef for over 10 years. From now on I made a
-            professional change to become a web developer.
+            The past year has been a year of professional change to become a web developer.
             I'm keen to promote my skills and
             join a professional team, I am currently working on
             personal projects to put my knowledge into practice.
