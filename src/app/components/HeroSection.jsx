@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -41,9 +42,15 @@ const HeroSection = () => {
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#EEEEEE] hover:bg-[#4E9F3D] text-black">
-              Hire Me
+              <Link href={'/guideline-dav.pdf'} target='_blank' rel="noopener noreferrer">
+                Guideline
+              </Link>
             </button>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-[#1E5128] text-white border border-white mt-3">Download CV</button>
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-[#1E5128] text-white border border-white mt-3">
+              <Link href={'/cv-david.pdf'} target='_blank' rel="noopener noreferrer">
+                Curriculum Vitae
+              </Link>
+            </button>
           </div>
         </motion.div>
         <motion.div
