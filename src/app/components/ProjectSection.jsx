@@ -16,33 +16,15 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Netflix Clone Front",
-    description: "A clone of the Netflix front page built with React.",
-    image: "/images/projects/netflix.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/davidgomescarvalho/netflix-david",
-    previewUrl: "https://netflix-david.vercel.app/"
-  },
-  {
-    id: 3,
-    title: "Tic-Tac-Toe Game",
-    description: "A simple tic-tac-toe game built with React.",
-    image: "/images/projects/tic-game.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/davidgomescarvalho/tic-tact-toe-react",
-    previewUrl: "https://tic-tact-toe-react.vercel.app/"
-  },
-  {
-    id: 4,
     title: "React Portfolio Website",
     description: "A portfolio website built with React and Tailwind CSS.",
-    image: "/images/projects/procrast-iphone.jpeg",
+    image: "/images/projects/portfolio.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/davidgomescarvalho/david-portfolio",
     previewUrl: "https://david-portfolio-sooty.vercel.app/"
   },
   {
-    id: 5,
+    id: 3,
     title: "Pokédex in Rails",
     description: "A Podédex index built with Ruby on Rails.",
     image: "/images/projects/pokedex.png",
@@ -51,15 +33,42 @@ const projectsData = [
     previewUrl: "/"
   },
   {
+    id: 4,
+    title: "Netflix Clone Front",
+    description: "A clone of the Netflix front page built with React.",
+    image: "/images/projects/netflix.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/davidgomescarvalho/netflix-david",
+    previewUrl: "https://netflix-david.vercel.app/"
+  },
+  {
+    id: 5,
+    title: "Tic-Tac-Toe Game",
+    description: "A simple tic-tac-toe game built with React.",
+    image: "/images/projects/tic-game.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/davidgomescarvalho/tic-tact-toe-react",
+    previewUrl: "https://tic-tact-toe-react.vercel.app/"
+  },
+  {
     id: 6,
+    title: "Mern Recipe app",
+    description: "Create your own recipes and save them.",
+    image: "/images/projects/my-recipes.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/davidgomescarvalho/my-recipes",
+    previewUrl: ""
+  },
+  {
+    id: 7,
     title: "Garden App in Rails",
     description: "Create your own garden and add pictures of your plants.",
     image: "/images/projects/garden.png",
     tag: ["All", "Web"],
     gitUrl: "",
     previewUrl: "https://my-garden-app-749281f9658b.herokuapp.com/"
-  }
 
+  }
 ]
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
