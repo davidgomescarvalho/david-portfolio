@@ -59,7 +59,7 @@ const EmailSection = () => {
           Whether you have a question or contact me, I'll quickly get back to you!
         </p>
         <p className='text-[#ADB7BE] mb-4 max-w-md'>
-          Email: davidgomescarvalho.dev@gmail.com
+          Email: david.gomes.web@gmail.com
         </p>
         <p className='text-[#ADB7BE] mb-4 max-w-md'>
           Phone: +33 6 98 51 44 11
