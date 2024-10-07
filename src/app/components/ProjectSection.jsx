@@ -7,7 +7,7 @@ const projectsData = [
   {
     id: 1,
     title: "Procrast",
-    description: "A Ruby on rails app that helps you to manage your tasks.",
+    description: "A Rails app that helps you to manage your tasks.",
     image: "/images/projects/procrast-iphone.jpeg",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/davidgomescarvalho/procrast",
@@ -61,20 +61,20 @@ const projectsData = [
   {
     id: 7,
     title: "Garden App in Rails",
-    description: "Create your own garden and add pictures of your plants.",
+    description: "Create your own garden and add pics of your plants.",
     image: "/images/projects/garden.png",
     tag: ["All", "Web"],
     gitUrl: "",
     previewUrl: "https://my-garden-app-749281f9658b.herokuapp.com/",
   },
   {
-    id: 7,
-    title: "Garden App in Rails",
-    description: "Create your own garden and add pictures of your plants.",
-    image: "/images/projects/garden.png",
+    id: 8,
+    title: "Airbnb Clone",
+    description: "Complete clone of airbnb website in Ruby on Rails",
+    image: "/images/projects/airbnb.png",
     tag: ["All", "Web"],
-    gitUrl: "",
-    previewUrl: "https://my-garden-app-749281f9658b.herokuapp.com/",
+    gitUrl: "https://github.com/davidgomescarvalho/airbnb",
+    previewUrl: "",
   },
 ];
 const ProjectSection = () => {
