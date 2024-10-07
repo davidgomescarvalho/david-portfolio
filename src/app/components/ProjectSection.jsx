@@ -1,8 +1,7 @@
 "use client";
-import React, { useState } from 'react'
-import ProjectCard from './ProjectCard'
-import ProjectTag from './ProjectTag'
-
+import React, { useState } from "react";
+import ProjectCard from "./ProjectCard";
+import ProjectTag from "./ProjectTag";
 
 const projectsData = [
   {
@@ -12,16 +11,16 @@ const projectsData = [
     image: "/images/projects/procrast-iphone.jpeg",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/davidgomescarvalho/procrast",
-    previewUrl: "https://www.procrast.fr/"
+    previewUrl: "https://www.procrast.fr/",
   },
   {
     id: 2,
-    title: "React Portfolio Website",
-    description: "A portfolio website built with React and Tailwind CSS.",
-    image: "/images/projects/portfolio.png",
+    title: "Mern Recipe app",
+    description: "Create your own recipes and save them.",
+    image: "/images/projects/my-recipes.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/davidgomescarvalho/david-portfolio",
-    previewUrl: "https://david-portfolio-sooty.vercel.app/"
+    gitUrl: "https://github.com/davidgomescarvalho/my-recipes",
+    previewUrl: "",
   },
   {
     id: 3,
@@ -30,34 +29,34 @@ const projectsData = [
     image: "/images/projects/pokedex.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/davidgomescarvalho/pokedex",
-    previewUrl: "/"
+    previewUrl: "/",
   },
   {
     id: 4,
+    title: "React Portfolio Website",
+    description: "A portfolio website built with React and Tailwind CSS.",
+    image: "/images/projects/portfolio.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/davidgomescarvalho/david-portfolio",
+    previewUrl: "https://david-portfolio-sooty.vercel.app/",
+  },
+  {
+    id: 5,
     title: "Netflix Clone Front",
     description: "A clone of the Netflix front page built with React.",
     image: "/images/projects/netflix.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/davidgomescarvalho/netflix-david",
-    previewUrl: "https://netflix-david.vercel.app/"
+    previewUrl: "https://netflix-david.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Tic-Tac-Toe Game",
     description: "A simple tic-tac-toe game built with React.",
     image: "/images/projects/tic-game.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/davidgomescarvalho/tic-tact-toe-react",
-    previewUrl: "https://tic-tact-toe-react.vercel.app/"
-  },
-  {
-    id: 6,
-    title: "Mern Recipe app",
-    description: "Create your own recipes and save them.",
-    image: "/images/projects/my-recipes.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/davidgomescarvalho/my-recipes",
-    previewUrl: ""
+    previewUrl: "https://tic-tact-toe-react.vercel.app/",
   },
   {
     id: 7,
@@ -66,10 +65,9 @@ const projectsData = [
     image: "/images/projects/garden.png",
     tag: ["All", "Web"],
     gitUrl: "",
-    previewUrl: "https://my-garden-app-749281f9658b.herokuapp.com/"
-
-  }
-]
+    previewUrl: "https://my-garden-app-749281f9658b.herokuapp.com/",
+  },
+];
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
 
@@ -83,10 +81,13 @@ const ProjectSection = () => {
 
   return (
     <>
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8" id='projects'>
+      <h2
+        className="text-center text-4xl font-bold text-white mt-4 mb-8"
+        id="projects"
+      >
         My Projects
       </h2>
-      <div className='text-white flex-row justify-center items-center gap-2 py-6'>
+      <div className="text-white flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -117,7 +118,7 @@ const ProjectSection = () => {
         ))}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ProjectSection
+export default ProjectSection;

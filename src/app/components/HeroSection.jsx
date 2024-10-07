@@ -46,7 +46,7 @@ const HeroSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Guideline
+                Visual Identity
               </Link>
             </button>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-[#1E5128] text-white border border-white mt-3">
