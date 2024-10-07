@@ -67,15 +67,15 @@ const projectsData = [
     gitUrl: "",
     previewUrl: "https://my-garden-app-749281f9658b.herokuapp.com/",
   },
-  /*   {
-    id: 8,
-    title: "Airbnb Clone in Rails",
-    description: "A full Airbnb clone website in rails",
+  {
+    id: 7,
+    title: "Garden App in Rails",
+    description: "Create your own garden and add pictures of your plants.",
     image: "/images/projects/garden.png",
-    tag: ["Web"],
+    tag: ["All", "Web"],
     gitUrl: "",
-    previewUrl: "",
-  }, */
+    previewUrl: "https://my-garden-app-749281f9658b.herokuapp.com/",
+  },
 ];
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
