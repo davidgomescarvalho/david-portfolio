@@ -42,7 +42,7 @@ const HeroSection = () => {
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-[#EEEEEE] hover:bg-[#4E9F3D] text-black">
               <Link
-                href={"/guideline-dav.pdf"}
+                href={"/visual-id.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
