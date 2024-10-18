@@ -9,7 +9,7 @@ const Footer = () => {
         <span>
           <Image src={MainLogo} alt="Logo" width={180} height={50} />
         </span>
-        <p className="text-slate-600">2024 - Made with Next.js</p>
+        <p className="text-slate-600">2024 - Made with Next.js </p>
       </div>
     </footer>
   );
