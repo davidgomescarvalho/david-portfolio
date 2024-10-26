@@ -24,6 +24,16 @@ const projectsData = [
   },
   {
     id: 3,
+    title: "Airbnb Clone",
+    description:
+      "Complete clone of airbnb website in Ruby on Rails, still in development.",
+    image: "/images/projects/airbnb.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/davidgomescarvalho/airbnb",
+    previewUrl: "",
+  },
+  {
+    id: 4,
     title: "Pokédex in Rails",
     description: "A Podédex index built with Ruby on Rails.",
     image: "/images/projects/pokedex.png",
@@ -32,7 +42,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 4,
+    id: 5,
     title: "React Portfolio Website",
     description: "A portfolio website built with React and Tailwind CSS.",
     image: "/images/projects/portfolio.png",
@@ -41,7 +51,7 @@ const projectsData = [
     previewUrl: "https://david-portfolio-sooty.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Netflix Clone Front",
     description: "A clone of the Netflix front page built with React.",
     image: "/images/projects/netflix.png",
@@ -50,7 +60,7 @@ const projectsData = [
     previewUrl: "https://netflix-david.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Tic-Tac-Toe Game",
     description: "A simple tic-tac-toe game built with React.",
     image: "/images/projects/tic-game.png",
@@ -59,7 +69,7 @@ const projectsData = [
     previewUrl: "https://tic-tact-toe-react.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Garden App in Rails",
     description: "Create your own garden and add pics of your plants.",
     image: "/images/projects/garden.png",
@@ -67,15 +77,16 @@ const projectsData = [
     gitUrl: "",
     previewUrl: "https://my-garden-app-749281f9658b.herokuapp.com/",
   },
-  {
-    id: 8,
+  /*   {
+    id: 9,
     title: "Airbnb Clone",
-    description: "Complete clone of airbnb website in Ruby on Rails",
+    description:
+      "Complete clone of airbnb website in Ruby on Rails, still in development.",
     image: "/images/projects/airbnb.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/davidgomescarvalho/airbnb",
     previewUrl: "",
-  },
+  }, */
 ];
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
